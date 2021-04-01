@@ -31,6 +31,7 @@ const About = () => (
         line-height: 1.5;
         font-size: 20px;
         text-align: left;
+        font-style: italic;
       }
       .section-text {
         margin: 20px 10px 10px;

@@ -7,18 +7,16 @@ const Project = ({ image, title, about, homepage, shortLink, repo }) => {
       <div className="image-container">
         <img src={image} alt="project" />
       </div>
-      <h2>
+      <h3>
         <a className="title" href={homepage}>
           {title}
         </a>
-      </h2>
-      <h4>
+      </h3>
+      <p>{about}</p>
+      <h3>
         <a className="repo" href={homepage}>
           {shortLink}
         </a>
-      </h4>
-      <p>{about}</p>
-      <h3>
         <a className="repo" href={repo}>
           Github repo
         </a>
@@ -35,14 +33,16 @@ const Project = ({ image, title, about, homepage, shortLink, repo }) => {
           margin: 20px;
           font-size: 24px;
         }
-        h3,
-        h4 {
+        h3 {
+          display: flex;
+          flex-wrap: wrap;
           margin: 20px;
         }
         p {
           margin: 20px;
         }
         .repo {
+          margin-right: 30px;
           text-decoration: none;
           color: ${theme.colors.blue};
         }
