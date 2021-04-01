@@ -50,7 +50,7 @@ export default function Home() {
         }
 
         .profile {
-          width: 200px;
+          width: 240px;
           padding: 20px;
           clip-path: circle(150px at center);
           border: 10px solid ${theme.colors.pink};

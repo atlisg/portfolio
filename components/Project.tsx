@@ -1,18 +1,27 @@
 import theme from '../styles/theme';
 import SmallCard from '../components/SmallCard';
 
-const Project = ({ image, title, about, homepage, repo }) => {
+const Project = ({ image, title, about, homepage, shortLink, repo }) => {
   return (
     <SmallCard>
       <div className="image-container">
         <img src={image} alt="project" />
       </div>
       <h2>
-        <a href={homepage}>{title}</a>
+        <a className="title" href={homepage}>
+          {title}
+        </a>
       </h2>
+      <h4>
+        <a className="repo" href={homepage}>
+          {shortLink}
+        </a>
+      </h4>
       <p>{about}</p>
       <h3>
-        <a href={repo}>Github repo</a>
+        <a className="repo" href={repo}>
+          Github repo
+        </a>
       </h3>
       <style jsx>{`
         .image-container {
@@ -26,17 +35,25 @@ const Project = ({ image, title, about, homepage, repo }) => {
           margin: 20px;
           font-size: 24px;
         }
-        h3 {
+        h3,
+        h4 {
           margin: 20px;
         }
         p {
           margin: 20px;
         }
-        a {
+        .repo {
+          text-decoration: none;
+          color: ${theme.colors.blue};
+        }
+        .repo:hover {
+          opacity: 0.8;
+        }
+        .title {
           text-decoration: none;
           color: ${theme.colors.text};
         }
-        a:hover {
+        .title:hover {
           color: ${theme.colors.blue};
         }
 

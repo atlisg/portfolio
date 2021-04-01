@@ -52,7 +52,7 @@ const Experience = ({ logo, company, homepage, title, period, highlights, footer
           text-align: left;
         }
         .section-header-title {
-          color: ${theme.colors.text};
+          color: ${theme.colors.darkGrey};
           font-size: 16px;
           margin: 0 0 0 auto;
         }
