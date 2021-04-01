@@ -16,7 +16,6 @@ export default function Home() {
       </Head>
 
       <div className="frontpage">
-        <div className="background1" />
         <h3>
           <p>
             <span>I want to create something </span>
@@ -47,16 +46,7 @@ export default function Home() {
           flex-direction: column;
           justify-content: center;
           align-items: center;
-          background-color: rgba(10, 10, 10, 0.8);
-        }
-
-        .background1 {
-          position: absolute;
-          width: 100vw;
-          height: 100vh;
-          background-image: url(atli.png);
-          background-size: 100vw;
-          z-index: -1;
+          background-color: ${theme.colors.darkBackground};
         }
 
         .profile {
