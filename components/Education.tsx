@@ -1,9 +1,9 @@
 import theme from '../styles/theme';
-import SmallCard from './SmallCard';
+import Card from './Card';
 
 const Education = () => (
   <div className="container">
-    <SmallCard>
+    <Card>
       <div className="header">
         <img src="ru.png" alt="ru-logo" />
         <h3>Reykjavik University</h3>
@@ -15,8 +15,8 @@ const Education = () => (
         <li>B.S. in Computer Science</li>
         <li>Made the Dean's list for outstanding academic achievement</li>
       </ul>
-    </SmallCard>
-    <SmallCard>
+    </Card>
+    <Card>
       <div className="header">
         <img src="sae.png" alt="sae-logo" />
         <h3>SAE Institude</h3>
@@ -27,19 +27,17 @@ const Education = () => (
       <ul>
         <li>Diploma in Audio Engineering</li>
       </ul>
-    </SmallCard>
+    </Card>
     <style jsx>{`
       .container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
+        margin: 0;
       }
       .header {
         display: flex;
         flex-wrap: wrap;
         align-items: center;
-        padding: 10px 0;
-        margin: 0 20px;
+        margin: 0;
+        padding-bottom: 20px;
         border-bottom: 1px solid #ccc;
       }
       img {
@@ -47,13 +45,20 @@ const Education = () => (
         margin-right: 10px;
       }
       p {
-        margin: 20px;
+        margin: 20px 0;
         font-style: italic;
         color: ${theme.colors.darkGrey};
+      }
+      ul {
+        padding-left: 20px;
       }
       li {
         line-height: 1.5;
         margin-right: 20px;
+      }
+      h3 {
+        margin: 0;
+        font-size: 24px;
       }
     `}</style>
   </div>

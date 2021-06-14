@@ -16,16 +16,7 @@ export default function Home() {
       </Head>
 
       <div className="frontpage">
-        <h3>
-          <p>
-            <span>I want to create something </span>
-            <span className="meaningful">meaningful</span>
-          </p>
-          <p>
-            <span>that has a </span>
-            <span className="positive">positive impact</span>
-          </p>
-        </h3>
+        <h3>Found the vegan!</h3>
         <Link href="/resume">
           <a className="resume-link">
             <img src="atli.png" alt="profile" className="profile" />
@@ -101,19 +92,15 @@ export default function Home() {
 
         h3 {
           margin: 40px 0;
-          font-size: 20px;
+          font-size: 24px;
           text-align: center;
+          color: ${theme.colors.lightText};
+          font-style: italic;
         }
         p {
           margin: 10px 0;
           color: ${theme.colors.lightText};
           font-style: italic;
-        }
-        .meaningful {
-          color: ${theme.colors.pink};
-        }
-        .positive {
-          color: ${theme.colors.blue};
         }
 
         @keyframes wiggle {

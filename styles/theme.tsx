@@ -8,6 +8,7 @@ const theme = {
     lightText: '#eee',
     background: '#eee',
     darkBackground: '#222',
+    borderColor: '#ccc',
     pink: '#e91e63',
     yellow: '#ffd300',
     blue: '#18aeb5',

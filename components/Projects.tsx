@@ -5,7 +5,7 @@ const Projects = ({ windowSize }) => (
     <Project
       image={windowSize.width < 578 ? 'food-e-mobile.png' : 'food-e.png'}
       title="FOOD·E"
-      about="Released in May 2020, FOOD·E is helping food professionals promote the sustainability of their food. Built with Next.js and MongoDB."
+      about="Released in May 2020, FOOD·E helps food professionals promote the sustainability of their food. Built with Next.js and MongoDB."
       homepage="//foodprintcalculator.com/"
       shortLink="foodprintcalculator.com"
       repo="//github.com/ethicodeorg/foodprint-calculator"
@@ -13,7 +13,7 @@ const Projects = ({ windowSize }) => (
     <Project
       image={windowSize.width < 578 ? 'ethicode-mobile.png' : 'ethicode-team.png'}
       title="Ethicode homepage"
-      about="Created in March 2020, the homepage for Ethicode was originally built with Vue.js but after experimenting with that framework a bit, I decided to rewrite this project using Next.js."
+      about="Created in March 2020, the Ethicode homepage was originally built with Vue.js but after experimenting with that framework a bit, I decided to rewrite this project using Next.js."
       homepage="//ethicode.org/"
       shortLink="ethicode.org"
       repo="//github.com/ethicodeorg/website"

@@ -5,6 +5,15 @@ import SmallCard from './SmallCard';
 const Contact = () => (
   <div className="container">
     <SmallCard>
+      <h2>Get in touch</h2>
+      <p>
+        If you're looking for someone to create tailor-made web & mobile applications to scale your
+        impact and propel your mission towards a more ethical future, I'd be delighted to talk.
+      </p>
+      <p>
+        To get started, send me a brief description of your project, and we can start exploring the
+        next steps. Let's spread some love together!
+      </p>
       <div className="social-container">
         <SocialIcon url="mailto:atlisaevar@gmail.com" />
         <a href="mailto:atlisaevar@gmail.com">atlisaevar@gmail.com</a>
@@ -42,6 +51,16 @@ const Contact = () => (
       }
       a:hover {
         color: ${theme.colors.blue};
+      }
+      h2 {
+        font-size: 24px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid ${theme.colors.borderColor};
+        margin: 20px;
+      }
+      p {
+        font-size: 18px;
+        margin: 20px;
       }
     `}</style>
   </div>
