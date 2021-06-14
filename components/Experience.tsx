@@ -1,5 +1,6 @@
 import theme from '../styles/theme';
 import Card from '../components/Card';
+import ExternalLink from './ExternalLink';
 
 const Experience = ({ logo, company, homepage, title, period, highlights, footer }) => {
   return (
@@ -7,9 +8,7 @@ const Experience = ({ logo, company, homepage, title, period, highlights, footer
       <div className="section-header">
         <img src={logo} alt="logo" width="40" height="40" />
         <h3 className="section-header-name">
-          <a className="company-link" href={homepage} target="_blank">
-            {company}
-          </a>
+          <ExternalLink link={homepage} text={company} isTitle />
         </h3>
         <h3 className="section-header-title">{title}</h3>
       </div>
@@ -20,11 +19,7 @@ const Experience = ({ logo, company, homepage, title, period, highlights, footer
           {highlights.map((highlight: any, i: number) => (
             <li key={i}>
               {highlight.text}
-              {highlight.link && (
-                <a href={highlight.link} target="_blank">
-                  {highlight.linkText}
-                </a>
-              )}
+              {highlight.link && <ExternalLink link={highlight.link} text={highlight.linkText} />}
             </li>
           ))}
         </ul>
@@ -65,13 +60,6 @@ const Experience = ({ logo, company, homepage, title, period, highlights, footer
           padding-top: 20px;
           font-style: italic;
           color: ${theme.colors.darkGrey};
-        }
-        a {
-          text-decoration: none;
-          color: ${theme.colors.blue};
-        }
-        a:hover {
-          opacity: 0.8;
         }
         li {
           line-height: 1.5;

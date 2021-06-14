@@ -1,5 +1,6 @@
 import theme from '../styles/theme';
 import SmallCard from '../components/SmallCard';
+import ExternalLink from './ExternalLink';
 
 const Project = ({ image, title, about, homepage, shortLink, repo }) => {
   return (
@@ -8,18 +9,12 @@ const Project = ({ image, title, about, homepage, shortLink, repo }) => {
         <img src={image} alt="project" />
       </div>
       <h3>
-        <a className="title" href={homepage}>
-          {title}
-        </a>
+        <ExternalLink link={homepage} text={title} isTitle />
       </h3>
       <p>{about}</p>
       <h3>
-        <a className="repo" href={homepage}>
-          {shortLink}
-        </a>
-        <a className="repo" href={repo}>
-          Github repo
-        </a>
+        <ExternalLink link={homepage} text={shortLink} />
+        <ExternalLink link={repo} text="Github repo" isRepo />
       </h3>
       <style jsx>{`
         .image-container {
@@ -40,21 +35,6 @@ const Project = ({ image, title, about, homepage, shortLink, repo }) => {
         }
         p {
           margin: 20px;
-        }
-        .repo {
-          margin-right: 30px;
-          text-decoration: none;
-          color: ${theme.colors.blue};
-        }
-        .repo:hover {
-          opacity: 0.8;
-        }
-        .title {
-          text-decoration: none;
-          color: ${theme.colors.text};
-        }
-        .title:hover {
-          color: ${theme.colors.blue};
         }
 
         @media only screen and (min-width: 768px) {

@@ -1,5 +1,6 @@
 import Card from './Card';
 import theme from '../styles/theme';
+import ExternalLink from './ExternalLink';
 
 const About = () => (
   <div className="container">
@@ -12,15 +13,9 @@ const About = () => (
       </h3>
       <p className="section-text">
         So far, my most significant contributions towards the mission have been made by creating and
-        building software like{' '}
-        <a className="link" href="//veganbot.com/" target="_blank">
-          VeganBot
-        </a>{' '}
-        and{' '}
-        <a className="link" href="//foodprintcalculator.com/" target="_blank">
-          FOOD·E
-        </a>
-        , but I am open to anything that will serve the mission.
+        building software like <ExternalLink link="http://veganbot.com/" text="VeganBot" /> and{' '}
+        <ExternalLink link="//foodprintcalculator.com/" text="FOOD·E" />, but I am open to anything
+        that will serve the mission.
       </p>
     </Card>
     <Card>
@@ -70,13 +65,6 @@ const About = () => (
         text-align: left;
         line-height: 1.5;
         color: ${theme.colors.text};
-      }
-      .link {
-        text-decoration: none;
-        color: ${theme.colors.blue};
-      }
-      .link:hover {
-        opacity: 0.8;
       }
 
       @media only screen and (min-width: 768px) {

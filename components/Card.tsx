@@ -1,30 +1,25 @@
-import theme from '../styles/theme';
+const Card = ({ children }) => (
+  <div className="card">
+    {children}
 
-const Card = ({ children }) => {
-  return (
-    <div className="card">
-      {children}
+    <style jsx>{`
+      .card {
+        border: none;
+        border-radius: 0;
+        box-shadow: none;
+        width: 100%;
+        padding: 20px;
+        margin: 20px auto;
+        background-color: #fff;
+      }
 
-      <style jsx>{`
+      @media only screen and (min-width: 768px) {
         .card {
-          border: none;
-          border-radius: 0;
-          box-shadow: none;
-          width: 100%;
-          padding: 20px;
-          margin: 20px auto;
-          background-color: #fff;
+          max-width: 800px;
+          margin: 30px auto 0;
         }
-
-        @media only screen and (min-width: 768px) {
-          .card {
-            max-width: 800px;
-            margin: 30px auto 0;
-          }
-        }
-      `}</style>
-    </div>
-  );
-};
-
+      }
+    `}</style>
+  </div>
+);
 export default Card;

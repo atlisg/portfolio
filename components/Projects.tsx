@@ -22,7 +22,7 @@ const Projects = ({ windowSize }) => (
       image={windowSize.width < 578 ? 'veganbot-mobile.png' : 'veganbot.png'}
       title="VeganBot"
       about="Deployed in May 2018, VeganBot educates and trains people in the vegan conversation, to help veganism spread even faster. The client was built with TypeScript/Angular.js, the server with Node.js and then some Python scripts to gather the content."
-      homepage="//veganbot.com/"
+      homepage="http://veganbot.com/"
       shortLink="veganbot.com"
       repo="//github.com/atlisg/vegan-bot"
     />
