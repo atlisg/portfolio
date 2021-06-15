@@ -6,7 +6,7 @@ const theme = {
   colors: {
     text: '#222',
     lightText: '#eee',
-    background: '#eee',
+    background: '#eeeeee55',
     darkBackground: '#222',
     borderColor: '#ccc',
     pink: '#e91e63',

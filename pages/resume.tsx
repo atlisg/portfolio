@@ -17,6 +17,8 @@ const Resume = () => {
     width: undefined,
     height: undefined,
   });
+  const photos = ['checkit', 'frelsarinn', 'iceland', 'lundi'];
+  const photoindex = Math.floor(Math.random() * photos.length);
 
   useEffect(() => {
     const handleResize = () => {
@@ -47,7 +49,7 @@ const Resume = () => {
         />
       </Head>
 
-      {/* <div className="background2" /> */}
+      <div className="background2" />
 
       <div className="content">
         <div className="menubar">
@@ -140,8 +142,9 @@ const Resume = () => {
           top: 0;
           width: 100vw;
           height: 100vh;
-          background-image: url(tveir_i_sjotta.jpg);
-          background-size: 800px;
+          background-image: url(${photos[photoindex]}.jpg);
+          background-size: cover;
+          background-position: center;
           z-index: -1;
         }
 

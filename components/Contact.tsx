@@ -40,8 +40,8 @@ const Contact = () => {
           To get started, send me a brief description of your project, and we can start exploring
           the next steps. Let's spread some love together!
         </p>
-        {contacts.map((contact) => (
-          <div className="social-container">
+        {contacts.map((contact, iContact) => (
+          <div key={iContact} className="social-container">
             <SocialIcon url={contact.link} />
             <ExternalLink link={contact.link} text={contact.text} isTitle isRepo />
           </div>
