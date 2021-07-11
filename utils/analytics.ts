@@ -7,7 +7,7 @@ declare global {
 }
 
 export const initGA = () => {
-  ReactGA.initialize('278885459');
+  ReactGA.initialize('UA-113130296-4');
 };
 
 export const logPageView = () => {
