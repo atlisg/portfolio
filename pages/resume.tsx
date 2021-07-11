@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Head from 'next/head';
+import { FaBars } from 'react-icons/fa';
+import { initGA, logPageView } from '../utils/analytics';
 import Experiences from '../components/Experiences';
 import Projects from '../components/Projects';
 import Skills from '../components/Skills';
@@ -9,7 +11,6 @@ import theme from '../styles/theme';
 import Education from '../components/Education';
 import Contact from '../components/Contact';
 import About from '../components/About';
-import { FaBars } from 'react-icons/fa';
 
 const Resume = () => {
   const [isToggled, setIsToggled] = useState(false);
@@ -19,6 +20,14 @@ const Resume = () => {
   });
   const photos = ['checkit', 'frelsarinn', 'iceland', 'lundi'];
   const photoindex = Math.floor(Math.random() * photos.length);
+
+  useEffect(() => {
+    if (!window.GA_INITIALIZED) {
+      initGA();
+      window.GA_INITIALIZED = true;
+    }
+    logPageView();
+  });
 
   useEffect(() => {
     const handleResize = () => {

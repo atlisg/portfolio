@@ -1,9 +1,18 @@
+import React, { useEffect } from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
-import { FaHandPointUp } from 'react-icons/fa';
+import { initGA, logPageView } from '../utils/analytics';
 import theme from '../styles/theme';
 
 export default function Home() {
+  useEffect(() => {
+    if (!window.GA_INITIALIZED) {
+      initGA();
+      window.GA_INITIALIZED = true;
+    }
+    logPageView();
+  });
+
   return (
     <div className="container">
       <Head>
