@@ -7,15 +7,16 @@ const About = () => (
     <Card>
       <h2 className="section-title">Mission</h2>
       <h3 className="section-why">
-        To help people realize that consuming animal products is misaligned with their moral values
-        and encourage them towards veganism – so that we can eliminate needless animal suffering,
-        reduce our environmental footprint and improve our health.
+        To solve problems worth solving and fight for causes worth fighting for – so that we can
+        expand wellbeing and our circle of compassion.
       </h3>
       <p className="section-text">
         So far, my most significant contributions towards the mission have been made by creating and
-        building software like <ExternalLink link="http://veganbot.com/" text="VeganBot" /> and{' '}
-        <ExternalLink link="//foodprintcalculator.com/" text="FOOD·E" />, but I am open to anything
-        that will serve the mission.
+        building software like <ExternalLink link="http://veganbot.com/" text="VeganBot" />, in aid
+        of the animal rights movement, and{' '}
+        <ExternalLink link="//foodprintcalculator.com/" text="FOOD·E" />, to create awareness of the
+        environmental impacts of food. I'm always looking for new problems worth solving and am
+        always open to anything that will serve the mission in any way.
       </p>
     </Card>
     <Card>

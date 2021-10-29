@@ -3,11 +3,32 @@ import Experience from '../components/Experience';
 const Experiences = () => (
   <div className="container">
     <Experience
+      logo="eye-close.png"
+      company="Ethicode"
+      homepage="//ethicode.org"
+      title="Founder"
+      period="Mar 2020 – present | Remote from Garður, Iceland"
+      highlights={[
+        {
+          text: 'Started an organization around my personal projects',
+        },
+        {
+          text: 'Created a Foodprint Calculator to evaluate the environmental impact of recipes and food products, ',
+          link: '//foodprintcalculator.com',
+          linkText: 'FOOD·E',
+        },
+        {
+          text: 'Recruited and organized 25 volunteers from around the world to work on them with me',
+        },
+      ]}
+      footer="Ethicode is working towards a world where all sentient beings have the right to life, liberty, and the pursuit of happiness."
+    />
+    <Experience
       logo="planeBlue.png"
       company="Dohop"
       homepage="//dohop.com"
       title="Full stack developer"
-      period="Sep 2017 – present | Reykjavík, Iceland and Remote from Garður, Iceland"
+      period="Sep 2017 – Aug 2021 | Reykjavík, Iceland and Remote from Garður, Iceland"
       highlights={[
         {
           text: 'Key developer for our biggest partner platform, ',
@@ -21,44 +42,18 @@ const Experiences = () => (
           text: 'Implemented fare class selection in the frontend',
         },
         {
-          text:
-            'These last two items unlocked a huge market for us and sparked a skyrocket in sales at the company',
+          text: 'These last two items unlocked a huge market for us and sparked a skyrocket in sales at the company',
         },
         {
           text: 'Created e2e tests for all our whitelabel partner platforms using Cypress',
         },
         {
-          text:
-            'Since I joined the company, we won the "World\'s Leading Flight Comparison Website" every year at the ',
-          link:
-            'https://www.worldtravelawards.com/award-travel-technologys-leading-flight-comparison-website-2020',
+          text: 'Since I joined the company, we won the "World\'s Leading Flight Comparison Website" every year at the ',
+          link: 'https://www.worldtravelawards.com/award-travel-technologys-leading-flight-comparison-website-2020',
           linkText: 'World Travel Awards',
         },
       ]}
       footer="Dohop provides virtual interline platforms for airlines, i.e. a flight search and booking engine to connect with other airlines."
-    />
-    <Experience
-      logo="eye-close.png"
-      company="Ethicode"
-      homepage="//ethicode.org"
-      title="Founder"
-      period="Mar 2020 – present | Remote from Garður, Iceland"
-      highlights={[
-        {
-          text: 'Started an organization around my personal projects',
-        },
-        {
-          text:
-            'Created a Foodprint Calculator to evaluate the environmental impact of recipes and food products, ',
-          link: '//foodprintcalculator.com',
-          linkText: 'FOOD·E',
-        },
-        {
-          text:
-            'Recruited and organized 25 volunteers from around the world to work on them with me',
-        },
-      ]}
-      footer="Ethicode is working towards a world where all sentient beings have the right to life, liberty, and the pursuit of happiness."
     />
     <Experience
       logo="north+patch.png"
@@ -86,8 +81,7 @@ const Experiences = () => (
       period="Jun 2015 – May 2016 | Reykjavík, Iceland"
       highlights={[
         {
-          text:
-            'Automated processes for the School of Computer Science Offices in the summer of 2015',
+          text: 'Automated processes for the School of Computer Science Offices in the summer of 2015',
         },
         {
           text: 'Instructed in the course "Calculus and Statistics" in the fall of 2015',

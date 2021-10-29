@@ -10,6 +10,10 @@ const Contact = () => {
       text: 'atlisaevar@gmail.com',
     },
     {
+      link: 'https://www.linkedin.com/in/atlisaevar/',
+      text: 'linkedin.com/in/atlisaevar/',
+    },
+    {
       link: 'https://github.com/atlisg',
       text: 'github.com/atlisg',
     },
@@ -17,29 +21,12 @@ const Contact = () => {
       link: 'https://github.com/atlidohop',
       text: 'github.com/atlidohop',
     },
-    {
-      link: 'https://www.linkedin.com/in/atlisaevar/',
-      text: 'linkedin.com/in/atlisaevar/',
-    },
-    {
-      link: 'https://www.instagram.com/atlisaevar/',
-      text: 'instagram.com/atlisaevar/',
-    },
   ];
 
   return (
     <div className="container">
       <SmallCard>
         <h2>Get in touch</h2>
-        <p>
-          If you're looking for someone to create tailor-made web & mobile applications to scale
-          your impact and propel your mission towards a more ethical future, I'd be delighted to
-          talk.
-        </p>
-        <p>
-          To get started, send me a brief description of your project, and we can start exploring
-          the next steps. Let's spread some love together!
-        </p>
         {contacts.map((contact, iContact) => (
           <div key={iContact} className="social-container">
             <SocialIcon url={contact.link} />
