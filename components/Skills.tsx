@@ -14,16 +14,16 @@ const Skills = () => (
           name: 'Next.js',
         },
         {
+          image: 'vue.png',
+          name: 'Vue.js',
+        },
+        {
           image: 'typescript.svg',
           name: 'Typescript',
         },
         {
           image: 'angular.svg',
           name: 'Angular.js',
-        },
-        {
-          image: 'vue.png',
-          name: 'Vue.js',
         },
       ]}
     />

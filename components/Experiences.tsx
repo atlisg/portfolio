@@ -3,6 +3,20 @@ import Experience from '../components/Experience';
 const Experiences = () => (
   <div className="container">
     <Experience
+      logo="ankeri_logo.webp"
+      company="Ankeri Solutions"
+      homepage="//ankeri.net"
+      title="Software engineer"
+      period="Nov 2021 – present | Reykjavík, Iceland"
+      highlights={[
+        {
+          text: 'Created the Ankeri Aware app to make performance and sustainability an enterprise wide push for shipping companies, ',
+          link: '//ankeri.net/aware',
+          linkText: 'Ankeri Aware',
+        },
+      ]}
+    />
+    <Experience
       logo="eye-close.png"
       company="Ethicode"
       homepage="//ethicode.org"

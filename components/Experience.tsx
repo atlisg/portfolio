@@ -2,11 +2,19 @@ import theme from '../styles/theme';
 import Card from '../components/Card';
 import ExternalLink from './ExternalLink';
 
-const Experience = ({ logo, company, homepage, title, period, highlights, footer }) => {
+const Experience = ({
+  logo,
+  company,
+  homepage,
+  title,
+  period,
+  highlights,
+  footer,
+}) => {
   return (
     <Card>
       <div className="section-header">
-        <img src={logo} alt="logo" width="40" height="40" />
+        <img src={logo} alt="logo" width="40" />
         <h3 className="section-header-name">
           <ExternalLink link={homepage} text={company} isTitle />
         </h3>
@@ -19,7 +27,9 @@ const Experience = ({ logo, company, homepage, title, period, highlights, footer
           {highlights.map((highlight: any, i: number) => (
             <li key={i}>
               {highlight.text}
-              {highlight.link && <ExternalLink link={highlight.link} text={highlight.linkText} />}
+              {highlight.link && (
+                <ExternalLink link={highlight.link} text={highlight.linkText} />
+              )}
             </li>
           ))}
         </ul>
