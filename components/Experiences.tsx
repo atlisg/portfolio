@@ -15,6 +15,7 @@ const Experiences = () => (
           linkText: 'Ankeri Aware',
         },
       ]}
+      footer="Ankeri is the cloud-based platform that allows every shipping company to stay on top of fleet data, performance and sustainability."
     />
     <Experience
       logo="eye-close.png"
